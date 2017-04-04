@@ -1,6 +1,6 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: Mephistopheles
+ * User: DamnationLtd
  * Date: 4/4/2017
  * Time: 10:10 AM
  * 
@@ -9,12 +9,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace BackupGenerators
+namespace DLTD
 {
 	/// <summary>
-	/// Description of MyClass.
+	/// Description of BackupGenerator.
 	/// </summary>
-	public class MyClass
+	public class BackupGenerator
 	{
 		
 	}
