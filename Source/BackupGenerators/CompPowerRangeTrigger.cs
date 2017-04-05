@@ -46,15 +46,21 @@ namespace DLTD
 
 			if (this.transNet != null && this.transNet.batteryComps.Count > 0)
 			{
-				if (this.transNet.CurrentStoredEnergy() <= 200)
+				if (this.refuelableDualConsumptionComp.LowPowerMode &&
+				    this.transNet.CurrentStoredEnergy() <= 200)
 				{
 					this.refuelableDualConsumptionComp.LowPowerMode = false;
 				}
-				else if (this.transNet.CurrentStoredEnergy() >= 1000)
+				else if (!this.refuelableDualConsumptionComp.LowPowerMode &&
+				         this.transNet.CurrentStoredEnergy() >= 1000)
 				{
 					this.refuelableDualConsumptionComp.LowPowerMode = true;
 				}
 
+			}
+			else
+			{
+				this.refuelableDualConsumptionComp.LowPowerMode = true;
 			}
 		}
 	}
