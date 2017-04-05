@@ -62,7 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackupGenerator.cs" />
+    <Compile Include="CompPowerRangeTrigger.cs" />
+    <Compile Include="CompProperties_RefuelableDualConsumption.cs" />
+    <Compile Include="CompRefuelableDualConsumption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -39,9 +39,9 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <highFuelConsumptionRate>110.0</highFuelConsumptionRate>
-        <lowFuelConsumptionRate>11.0</lowFuelConsumptionRate>
-        <fuelCapacity>150.0</fuelCapacity>
+        <fuelLowConsumptionRate>11.0</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>66.0</fuelHighConsumptionRate>
+        <fuelCapacity>75.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
