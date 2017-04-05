@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Backup Generators</name>
+  <author>DamnationLtd</author>
+  <url>http://rimworldgame.com</url>
+  <description>Backup and emergency generators that kick on only when battery capacity is low.</description>
+  <targetVersion>0.16.1393</targetVersion>
+</ModMetaData>
