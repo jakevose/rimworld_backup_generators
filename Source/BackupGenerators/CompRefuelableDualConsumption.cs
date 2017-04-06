@@ -61,9 +61,8 @@ namespace DLTD
 		
 		public override void CompTick()
 		{
-			base.CompTick();
-			
 			this.refuelableComp.Props.fuelConsumptionRate = this.CurrentConsumptionRate;
+			base.CompTick();
 		}
 	}
 }

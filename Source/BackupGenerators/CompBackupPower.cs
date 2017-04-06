@@ -77,6 +77,7 @@ namespace DLTD
 		public override void CompTick()
 		{
 			base.CompTick();
+			
 			if ((this.breakdownableComp != null && this.breakdownableComp.BrokenDown) ||
 			    (this.refuelableComp != null && !this.refuelableComp.HasFuel) ||
 			    (this.flickableComp != null && !this.flickableComp.SwitchIsOn) ||
@@ -85,6 +86,7 @@ namespace DLTD
 			{
 				base.PowerOutput = 0f;
 				this.refuelableDualConsumptionComp.LowPowerMode = true;
+				this.recharging = false;
 			}
 			else
 			{

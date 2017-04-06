@@ -29,7 +29,8 @@
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <costList>
-      <Steel>1</Steel>
+      <Steel>150</Steel>
+      <Component>6</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -40,11 +41,12 @@
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>11.0</fuelLowConsumptionRate>
-        <fuelHighConsumptionRate>66.0</fuelHighConsumptionRate>
+        <fuelHighConsumptionRate>88.0</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>11.0</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
@@ -53,11 +55,11 @@
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
-        <glowColor>(217,112,33,0)</glowColor>
+        <glowColor>(217,42,33,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>4</heatPerSecond>
+        <heatPerSecond>8</heatPerSecond>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
