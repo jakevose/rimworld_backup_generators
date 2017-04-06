@@ -1,8 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Backup Generators</name>
+  <name>[A16] Backup Generators</name>
   <author>DamnationLtd</author>
   <url>https://github.com/jakevose/rimworld_backup_generators</url>
-  <description>Emergency generators that kick on only when battery capacity is critically low. Expensive to run! TODO: configurable UI settings</description>
+  <description>Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted. They're fuel-expensive, so don't rely on them for consistent power!
+
+    &lt;size=24&gt;Features&lt;/size&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        Generators start producing power when connected reserves are critically low (<= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
+      &lt;/li&gt;
+      &lt;li&gt;
+        Wood and Chemfuel versions are provided; the chemfuel version unlocks upon researching Refining
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;size=24&gt;Specifics&lt;/size&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        Backup generators only work on power grids with connected batteries
+      &lt;/li&gt;
+      &lt;li&gt;
+        Backup generators consume several times more fuel than Vanilla fueled generators when active; they're really only meant for emergencies
+      &lt;/li&gt;
+      &lt;li&gt;
+        Generators consume some fuel even when idling, although less than power-producing Vanilla fueled generators
+      &lt;/li&gt;
+      &lt;li&gt;
+        Chemfuel backup generators are twice as efficient as their wood-fueled counterparts, both when idle and providing power
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;size=24&gt;Feedback Welcome&lt;/size&gt;
+    Let me know if there are bugs, balance issues, or features you'd like to see!
+
+    &lt;size=24&gt;Change Log&lt;/size&gt;
+    2017/04/06, 1.0: Initial release
+
+    &lt;size=24&gt;Roadmap&lt;/size&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        Balance tweaks
+      &lt;/li&gt;
+      &lt;li&gt;
+        Install/uninstall capability
+      &lt;/li&gt;
+      &lt;li&gt;
+        On/off thresholds configurability
+      &lt;/li&gt;
+      &lt;li&gt;
+        Other options?
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;size=24&gt;License&lt;/size&gt;
+    Please feel free to pull this apart and make any derivative work you like as long as it's not a straight copy to claim this work as your own. Attribution is not required but is always appreciated.
+  </description>
   <targetVersion>0.16.1393</targetVersion>
 </ModMetaData>
