@@ -16,6 +16,8 @@ namespace DLTD
 {
 	public class CompBackupPower : CompPowerTrader
 	{
+		protected CompRefuelable refuelableComp;
+
 		protected CompRefuelableDualConsumption refuelableDualConsumptionComp;
 
 		protected CompBreakdownable breakdownableComp;
@@ -63,6 +65,7 @@ namespace DLTD
 		public override void PostSpawnSetup()
 		{
 			base.PostSpawnSetup();
+			this.refuelableComp = this.parent.GetComp<CompRefuelable>();
 			this.refuelableDualConsumptionComp = this.parent.GetComp<CompRefuelableDualConsumption>();
 			this.breakdownableComp = this.parent.GetComp<CompBreakdownable>();
 			if (base.Props.basePowerConsumption < 0f && !this.parent.IsBrokenDown())
@@ -75,7 +78,7 @@ namespace DLTD
 		{
 			base.CompTick();
 			if ((this.breakdownableComp != null && this.breakdownableComp.BrokenDown) ||
-			    (this.refuelableDualConsumptionComp != null && !this.refuelableDualConsumptionComp.HasFuel) ||
+			    (this.refuelableComp != null && !this.refuelableComp.HasFuel) ||
 			    (this.flickableComp != null && !this.flickableComp.SwitchIsOn) ||
 			    !this.IsCharging ||
 			    !base.PowerOn)

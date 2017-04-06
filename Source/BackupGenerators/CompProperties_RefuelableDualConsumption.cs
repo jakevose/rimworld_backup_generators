@@ -22,31 +22,9 @@ namespace DLTD
 		public float fuelHighConsumptionRate = 1f;
 		public float fuelLowConsumptionRate = 1f;
 
-		public float fuelCapacity = 2f;
-
-		public float autoRefuelPercent = 0.3f;
-
-		public ThingFilter fuelFilter;
-
-		public bool showFuelGizmo;
-
-		public bool targetFuelLevelConfigurable;
-
-		public float initialConfigurableTargetFuelLevel;
-
-		public bool drawOutOfFuelOverlay = true;
-
-		public bool drawFuelGaugeInMap;
-		
 		public CompProperties_RefuelableDualConsumption()
 		{
 			this.compClass = typeof(CompRefuelableDualConsumption);
-		}
-
-		public override void ResolveReferences(ThingDef parentDef)
-		{
-			base.ResolveReferences(parentDef);
-			this.fuelFilter.ResolveReferences();
 		}
 	}
 }

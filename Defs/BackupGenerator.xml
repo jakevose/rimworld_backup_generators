@@ -41,6 +41,9 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>11.0</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>66.0</fuelHighConsumptionRate>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>11.0</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
