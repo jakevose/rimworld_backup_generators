@@ -33,7 +33,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Power">
-        <compClass>DLTD.CompPowerRangeTrigger</compClass>
+        <compClass>DLTD.CompBackupPower</compClass>
         <basePowerConsumption>-1000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>

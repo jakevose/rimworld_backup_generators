@@ -29,7 +29,7 @@ namespace DLTD
 
 		private float configuredTargetFuelLevel = -1f;
 		
-		private bool lowPowerMode = true;
+		private bool lowPowerMode = false;
 
 		private CompFlickable flickComp;
 

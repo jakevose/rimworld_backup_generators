@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompPowerRangeTrigger.cs" />
+    <Compile Include="CompBackupPower.cs" />
     <Compile Include="CompProperties_RefuelableDualConsumption.cs" />
     <Compile Include="CompRefuelableDualConsumption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
