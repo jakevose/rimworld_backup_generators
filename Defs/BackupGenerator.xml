@@ -2,11 +2,11 @@
 <Buildings>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>BackupGenerator</defName>
-    <label>backup generator</label>
+    <defName>BackupGeneratorWood</defName>
+    <label>backup generator (wood)</label>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Things/Building/Power/BackupGenerator</texPath>
+      <texPath>Things/Building/Power/BackupGeneratorWood</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
@@ -40,11 +40,11 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <fuelLowConsumptionRate>11.0</fuelLowConsumptionRate>
+        <fuelLowConsumptionRate>14.0</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>88.0</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>11.0</fuelConsumptionRate>
+        <fuelConsumptionRate>14.0</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
@@ -59,7 +59,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>8</heatPerSecond>
+        <heatPerSecond>6</heatPerSecond>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
@@ -70,6 +70,79 @@
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>BackupGeneratorChemfuel</defName>
+    <label>backup generator (chemfuel)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/BackupGeneratorChemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle, but is expensive to run.</description>
+    <size>(2,2)</size>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <costList>
+      <Steel>200</Steel>
+      <Component>8</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-1000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>7.0</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>44.0</fuelHighConsumptionRate>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>7.0</fuelConsumptionRate>
+        <fuelCapacity>75.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,42,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>4</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <designationHotkey>Misc3</designationHotkey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>Refining</li>
     </researchPrerequisites>
   </ThingDef>
 
