@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Backup Generators</name>
   <author>DamnationLtd</author>
-  <url>http://rimworldgame.com</url>
-  <description>Backup and emergency generators that kick on only when battery capacity is low.</description>
+  <url>https://github.com/jakevose/rimworld_backup_generators</url>
+  <description>Emergency generators that kick on only when battery capacity is critically low. Expensive to run! TODO: configurable UI settings</description>
   <targetVersion>0.16.1393</targetVersion>
 </ModMetaData>

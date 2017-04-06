@@ -23,7 +23,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Emergency power kicks in when battery reserves fall below a set minimum. Generator kicks off when reserves exceed a set maximum. Consumes little fuel when idle, but is expensive to run.</description>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle, but is expensive to run.</description>
     <size>(2,2)</size>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
