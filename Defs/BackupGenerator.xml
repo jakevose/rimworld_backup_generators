@@ -6,7 +6,7 @@
     <label>backup generator</label>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Things/Building/Power/FueledGenerator</texPath>
+      <texPath>Things/Building/Power/BackupGenerator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
