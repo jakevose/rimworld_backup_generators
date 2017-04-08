@@ -33,14 +33,15 @@ Change Log
 * Chemfuel still requires Refining research
 
 -------------------------------------------------------------------------------------------
-2017/04/08, 1.2: Behavior additions
+2017/04/08, 1.2.1: Behavior additions
 * Generators can now be minified, i.e. installed/uninstalled
 * Since they generate some amount of heat, the heater hinting shows when placing generators
+* Documentation flub on 1.2
 
 Roadmap
 --------------------------------
 * ~Balance tweaks~
-* Install/uninstall capability
+* ~Install/uninstall capability~
 * Advanced 1x1 versions (more research and a few rarer resources; probably a bit more efficient still)
 * On/off thresholds configurability
 * Other options?
