@@ -2,6 +2,8 @@
 --------------------------------
 Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted. They're fuel-expensive, so don't rely on them for consistent power!
 
+Get them on the [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=899559174).
+
 Features
 --------------------------------
 * Generators start producing power when connected reserves are critically low (&lt;= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
