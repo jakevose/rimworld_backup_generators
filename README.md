@@ -26,11 +26,16 @@ Change Log
 2017/04/06, 1.0: Initial release
 
 -------------------------------------------------------------------------------------------
-2017/04/06, 1.1: Balance tweaks
+2017/04/07, 1.1: Balance tweaks
 * Wood backup generators now last ~1 season/load idle and ~1 day/load running
 * Chemfuel backup generators now last ~1 year/load idle and ~4 days/load running
-* Both generators now require MultiAnalyzer research instead of just Electricity.
-* Chemfuel still requires Refining research.
+* Both generators now require MultiAnalyzer research instead of just Electricity
+* Chemfuel still requires Refining research
+
+-------------------------------------------------------------------------------------------
+2017/04/08, 1.2: Behavior additions
+* Generators can now be minified, i.e. installed/uninstalled
+* Since they generate some amount of heat, the heater hinting shows when placing generators
 
 Roadmap
 --------------------------------

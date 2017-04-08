@@ -17,6 +17,12 @@
     <fillPercent>1.0</fillPercent>
     <castEdgeShadows>false</castEdgeShadows>
     <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
@@ -89,6 +95,12 @@
     <fillPercent>1.0</fillPercent>
     <castEdgeShadows>false</castEdgeShadows>
     <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
