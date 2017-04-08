@@ -40,11 +40,11 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <fuelLowConsumptionRate>14.0</fuelLowConsumptionRate>
-        <fuelHighConsumptionRate>88.0</fuelHighConsumptionRate>
+        <fuelLowConsumptionRate>3.0</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>66.0</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>14.0</fuelConsumptionRate>
+        <fuelConsumptionRate>3.0</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
@@ -59,7 +59,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>6</heatPerSecond>
+        <heatPerSecond>4</heatPerSecond>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
@@ -69,7 +69,7 @@
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Electricity</li>
+      <li>MultiAnalyzer</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -112,11 +112,11 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <fuelLowConsumptionRate>7.0</fuelLowConsumptionRate>
-        <fuelHighConsumptionRate>44.0</fuelHighConsumptionRate>
+        <fuelLowConsumptionRate>1.0</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>22.0</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>7.0</fuelConsumptionRate>
+        <fuelConsumptionRate>1.0</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
@@ -131,7 +131,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>4</heatPerSecond>
+        <heatPerSecond>2</heatPerSecond>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
@@ -141,7 +141,7 @@
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>Electricity</li>
+      <li>MultiAnalyzer</li>
       <li>Refining</li>
     </researchPrerequisites>
   </ThingDef>

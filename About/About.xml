@@ -11,6 +11,7 @@
 * Wood and Chemfuel versions are provided; the chemfuel version unlocks upon researching Refining
 
 &lt;size=24&gt;Specifics&lt;/size&gt;
+* Each generator type should appear in the Power category when the research requirements are fulfilled (see: Change Log)
 * Backup generators only work on power grids with connected batteries
 * Backup generators consume several times more fuel than Vanilla fueled generators when active; they're really only meant for emergencies
 * Generators consume some fuel even when idling, although less than power-producing Vanilla fueled generators
@@ -21,10 +22,17 @@ Let me know if there are bugs, balance issues, or features you'd like to see!
 
 &lt;size=24&gt;Change Log&lt;/size&gt;
 2017/04/06, 1.0: Initial release
+-------------------------------------------------------------------------------------------
+2017/04/06, 1.1: Balance tweaks
+* Wood backup generators now last ~1 season/load idle and ~1 day/load running
+* Chemfuel backup generators now last ~1 year/load idle and ~4 days/load running
+* Both generators now require MultiAnalyzer research instead of just Electricity.
+* Chemfuel still requires Refining research.
 
 &lt;size=24&gt;Roadmap&lt;/size&gt;
-* Balance tweaks
+* ~Balance tweaks~
 * Install/uninstall capability
+* Advanced 1x1 versions (more research and a few rarer resources; probably a bit more efficient still)
 * On/off thresholds configurability
 * Other options?
 
