@@ -6,3 +6,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BackupGenerators\Ass
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DLTD_BackupGenerators\Assemblies\BackupGenerators.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DLTD_BackupGenerators\Source\BackupGenerators\obj\Debug\BackupGenerators.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DLTD_BackupGenerators\Source\BackupGenerators\obj\Debug\BackupGenerators.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworld_backup_generators\Assemblies\BackupGenerators.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworld_backup_generators\Source\BackupGenerators\obj\Debug\BackupGenerators.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rimworld_backup_generators\Source\BackupGenerators\obj\Debug\BackupGenerators.dll

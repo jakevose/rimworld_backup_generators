@@ -62,9 +62,9 @@ namespace DLTD
 			}
 		}
 
-		public override void PostSpawnSetup()
+		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
-			base.PostSpawnSetup();
+			base.PostSpawnSetup(true);
 			this.refuelableComp = this.parent.GetComp<CompRefuelable>();
 			this.refuelableDualConsumptionComp = this.parent.GetComp<CompRefuelableDualConsumption>();
 			this.breakdownableComp = this.parent.GetComp<CompBreakdownable>();
