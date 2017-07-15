@@ -38,6 +38,10 @@ Change Log
 * Since they generate some amount of heat, the heater hinting shows when placing generators
 * Documentation flub on 1.2
 
+-------------------------------------------------------------------------------------------
+2017/07/14, 1.2.2: A17 support
+* Thanks to ProximityMicrowave for beating me to the punch!
+
 Roadmap
 --------------------------------
 * ~Balance tweaks~

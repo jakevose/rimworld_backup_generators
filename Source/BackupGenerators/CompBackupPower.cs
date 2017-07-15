@@ -3,7 +3,7 @@
  * User: DamnationLtd
  * Date: 4/4/2017
  * Time: 10:10 AM
- * 
+ *
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using RimWorld;
@@ -21,7 +21,7 @@ namespace DLTD
 		protected CompRefuelableDualConsumption refuelableDualConsumptionComp;
 
 		protected CompBreakdownable breakdownableComp;
-		
+
 		private bool recharging = false;
 
 		protected virtual float DesiredPowerOutput
@@ -31,7 +31,7 @@ namespace DLTD
 				return -base.Props.basePowerConsumption;
 			}
 		}
-		
+
 		protected virtual bool IsCharging
 		{
 			get
@@ -57,14 +57,14 @@ namespace DLTD
 				{
 					this.recharging = false;
 				}
-				
+
 				return this.recharging;
 			}
 		}
 
 		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
-			base.PostSpawnSetup(true);
+			base.PostSpawnSetup(respawningAfterLoad);
 			this.refuelableComp = this.parent.GetComp<CompRefuelable>();
 			this.refuelableDualConsumptionComp = this.parent.GetComp<CompRefuelableDualConsumption>();
 			this.breakdownableComp = this.parent.GetComp<CompBreakdownable>();
@@ -77,7 +77,7 @@ namespace DLTD
 		public override void CompTick()
 		{
 			base.CompTick();
-			
+
 			if ((this.breakdownableComp != null && this.breakdownableComp.BrokenDown) ||
 			    (this.refuelableComp != null && !this.refuelableComp.HasFuel) ||
 			    (this.flickableComp != null && !this.flickableComp.SwitchIsOn) ||

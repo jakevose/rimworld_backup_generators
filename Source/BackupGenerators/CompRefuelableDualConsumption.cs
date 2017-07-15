@@ -3,7 +3,7 @@
  * User: DamnationLtd
  * Date: 4/4/2017
  * Time: 9:15 PM
- * 
+ *
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using RimWorld;
@@ -22,7 +22,7 @@ namespace DLTD
 	public class CompRefuelableDualConsumption : ThingComp
 	{
 		protected CompRefuelable refuelableComp;
-		
+
 		private bool lowPowerMode = false;
 
 		public bool LowPowerMode
@@ -36,7 +36,7 @@ namespace DLTD
 				this.lowPowerMode = value;
 			}
 		}
-		
+
 		public CompProperties_RefuelableDualConsumption Props
 		{
 			get
@@ -55,10 +55,10 @@ namespace DLTD
 
 		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
-			base.PostSpawnSetup(true);
+			base.PostSpawnSetup(respawningAfterLoad);
 			this.refuelableComp = this.parent.GetComp<CompRefuelable>();
 		}
-		
+
 		public override void CompTick()
 		{
 			this.refuelableComp.Props.fuelConsumptionRate = this.CurrentConsumptionRate;
