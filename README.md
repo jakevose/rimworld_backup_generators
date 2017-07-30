@@ -8,6 +8,7 @@ Features
 --------------------------------
 * Generators start producing power when connected reserves are critically low (&lt;= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
 * Wood and Chemfuel versions are provided; the chemfuel version unlocks upon researching Refining
+* New! Uranium version. Thanks, Xsile!
 
 Specifics
 --------------------------------
@@ -44,12 +45,12 @@ Change Log
 
 -------------------------------------------------------------------------------------------
 2017/07/30, 1.3: Updated size/graphics and tuning
-* Thanks to XSile for new graphics and adjustments!
+* Thanks to Xsile for new graphics and adjustments!
 
 New stats:
   Wood: 1200W; 75 capacity; 5 days active; 2 quadrums 7 days idle
   Chemfuel: 2100W; 75 capacity; 7 1/2 days active; 1 year 2 quadrums idle
-  Uranium: 5000W; 1 capacity; 10 days active; 2 years idle
+  Uranium: 4000W; 1 capacity; 10 days active; 2 years idle
 
 Roadmap
 --------------------------------

@@ -199,7 +199,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>DLTD.CompBackupPower</compClass>
-        <basePowerConsumption>-5000</basePowerConsumption>
+        <basePowerConsumption>-4000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Flickable" />
