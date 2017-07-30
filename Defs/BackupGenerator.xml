@@ -29,7 +29,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle, but is expensive to run.</description>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle.</description>
     <size>(1,2)</size>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
@@ -41,16 +41,16 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>DLTD.CompBackupPower</compClass>
-        <basePowerConsumption>-1000</basePowerConsumption>
+        <basePowerConsumption>-1200</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <fuelLowConsumptionRate>3.0</fuelLowConsumptionRate>
-        <fuelHighConsumptionRate>66.0</fuelHighConsumptionRate>
+        <fuelLowConsumptionRate>2.0</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>15.0</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>3.0</fuelConsumptionRate>
+        <fuelConsumptionRate>2.0</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
@@ -107,7 +107,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle, but is expensive to run.</description>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle.</description>
     <size>(1,2)</size>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
@@ -124,11 +124,11 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <fuelLowConsumptionRate>1.0</fuelLowConsumptionRate>
-        <fuelHighConsumptionRate>22.0</fuelHighConsumptionRate>
+        <fuelLowConsumptionRate>0.8</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>10.0</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>1.0</fuelConsumptionRate>
+        <fuelConsumptionRate>0.8</fuelConsumptionRate>
         <fuelCapacity>75.0</fuelCapacity>
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
@@ -186,15 +186,14 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle, but is expensive to run.</description>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle.</description>
     <size>(2,2)</size>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <costList>
-      <Steel>200</Steel>
-	  <Plasteel>150</Plasteel>
-	  <Uranium>10</Uranium>
+      <Steel>250</Steel>
+	    <Plasteel>2000</Plasteel>
       <Component>15</Component>
     </costList>
     <comps>
@@ -205,21 +204,21 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
-        <fuelLowConsumptionRate>.0125</fuelLowConsumptionRate>
-        <fuelHighConsumptionRate>.2</fuelHighConsumptionRate>
+        <fuelLowConsumptionRate>0.008</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>0.1</fuelHighConsumptionRate>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>1</fuelConsumptionRate>
+        <fuelConsumptionRate>0.008</fuelConsumptionRate>
         <fuelCapacity>1.0</fuelCapacity>
         <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
         <fuelFilter>
           <thingDefs>
             <li>Uranium</li>
           </thingDefs>
-        </fuelFilter> 
+        </fuelFilter>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>8</glowRadius>
+        <glowRadius>6</glowRadius>
         <glowColor>(50,200,50,0)</glowColor>
       </li>
       <li Class="CompProperties_HeatPusher">

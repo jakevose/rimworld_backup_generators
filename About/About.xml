@@ -4,7 +4,7 @@
   <author>DamnationLtd</author>
   <url>https://github.com/jakevose/rimworld_backup_generators</url>
   <targetVersion>0.17.0</targetVersion>
-  <description>Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted. They're fuel-expensive, so don't rely on them for consistent power!
+  <description>Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
 &lt;size=24&gt;Features&lt;/size&gt;
 * Generators start producing power when connected reserves are critically low (&lt;= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
@@ -39,10 +39,18 @@ Let me know if there are bugs, balance issues, or features you'd like to see!
 2017/07/14, 1.2.2: A17 support
 * Thanks to ProximityMicrowave for beating me to the punch!
 
+-------------------------------------------------------------------------------------------
+2017/07/30, 1.3: Updated size/graphics and tuning
+* Thanks to XSile for new graphics and adjustments!
+
+New stats:
+  Wood: 1200W; 75 capacity; 5 days active; 2 quadrums 7 days idle
+  Chemfuel: 2100W; 75 capacity; 7 1/2 days active; 1 year 2 quadrums idle
+  Uranium: 5000W; 1 capacity; 10 days active; 2 years idle
+
 &lt;size=24&gt;Roadmap&lt;/size&gt;
 * ~Balance tweaks~
 * ~Install/uninstall capability~
-* Advanced 1x1 versions (more research and a few rarer resources; probably a bit more efficient still)
 * On/off thresholds configurability
 * Other options?
 
