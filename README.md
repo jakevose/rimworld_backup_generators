@@ -42,11 +42,19 @@ Change Log
 2017/07/14, 1.2.2: A17 support
 * Thanks to ProximityMicrowave for beating me to the punch!
 
+-------------------------------------------------------------------------------------------
+2017/07/30, 1.3: Updated size/graphics and tuning
+* Thanks to XSile for new graphics and adjustments!
+
+New stats:
+  Wood: 1200W; 75 capacity; 5 days active; 2 quadrums 7 days idle
+  Chemfuel: 2100W; 75 capacity; 7 1/2 days active; 1 year 2 quadrums idle
+  Uranium: 5000W; 1 capacity; 10 days active; 2 years idle
+
 Roadmap
 --------------------------------
 * ~Balance tweaks~
 * ~Install/uninstall capability~
-* Advanced 1x1 versions (more research and a few rarer resources; probably a bit more efficient still)
 * On/off thresholds configurability
 * Other options?
 
