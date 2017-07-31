@@ -193,7 +193,7 @@
     </building>
     <costList>
       <Steel>250</Steel>
-	    <Plasteel>2000</Plasteel>
+	    <Plasteel>250</Plasteel>
       <Component>15</Component>
     </costList>
     <comps>
