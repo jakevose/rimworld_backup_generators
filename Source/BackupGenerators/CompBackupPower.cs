@@ -36,29 +36,41 @@ namespace DLTD
 		{
 			get
 			{
-				if (this.transNet != null && this.transNet.batteryComps.Count > 0)
-				{
-					if (this.recharging)
-					{
-						if (this.transNet.CurrentStoredEnergy() >= 1000)
-						{
-							this.recharging = false;
-						}
-					}
-					else
-					{
-						if (this.transNet.CurrentStoredEnergy() <= 200)
-						{
-							this.recharging = true;
-						}
-					}
-				}
-				else
-				{
-					this.recharging = false;
-				}
+                // if connected to a network...
+                if (this.transNet != null)
+                {
+                    // and batteries are connected
+                    if (this.transNet.batteryComps.Count > 0)
+                    {
+                        if (this.recharging && this.transNet.CurrentStoredEnergy() >= 1000)
+                        {
+                            // turn back off when we fill one battery's worth of charge
+                            this.recharging = false;
+                        }
+                        else if (this.transNet.CurrentStoredEnergy() <= 200)
+                        {
+                            // turn on when we drop below 200Wd stored
+                            this.recharging = true;
+                        }
+                        else
+                        {
+                            // maintain existing value of recharging!
+                            // we are somewhere between 200Wd and 1000Wd and charging or discharging
+                        }
+                    }
+                    else
+                    {
+                        // without batteries connected, always produce power
+                        this.recharging = true;
+                    }
+                }
+                else
+                {
+                    // don't produce power if not connected to a network
+                    this.recharging = false;
+                }
 
-				return this.recharging;
+                return this.recharging;
 			}
 		}
 

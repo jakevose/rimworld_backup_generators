@@ -192,9 +192,9 @@
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <costList>
-      <Steel>250</Steel>
 	    <Plasteel>250</Plasteel>
-      <Component>15</Component>
+      <Component>10</Component>
+      <Uranium>10</Uranium>
     </costList>
     <comps>
       <li Class="CompProperties_Power">

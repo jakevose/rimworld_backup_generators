@@ -1,39 +1,48 @@
-[A16] Backup Generators
+[A17] Backup Generators
 --------------------------------
-Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted. They're fuel-expensive, so don't rely on them for consistent power!
+Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
 Get them on the [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=899559174).
 
 Features
 --------------------------------
 * Generators start producing power when connected reserves are critically low (&lt;= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
-* Wood and Chemfuel versions are provided; the chemfuel version unlocks upon researching Refining
-* New! Uranium version. Thanks, Xsile!
+* Brand new art! Uranium version! Thanks, Xsile!
 
 Specifics
 --------------------------------
 * Each generator type should appear in the Power category when the research requirements are fulfilled (see: Change Log)
-* Backup generators only work on power grids with connected batteries
-* Backup generators consume several times more fuel than Vanilla fueled generators when active; they're really only meant for emergencies
 * Generators consume some fuel even when idling, although less than power-producing Vanilla fueled generators
-* Chemfuel backup generators are twice as efficient as their wood-fueled counterparts, both when idle and providing power
+
+Wood:
+* 1200W
+* 75 capacity
+* 5 days active
+* 2 quadrums 7 days idle
+* MultiAnalyzer to unlock
+* 150 Steel, 6 Component to build
+
+Chemfuel:
+* 2100W
+* 75 capacity
+* 7 1/2 days active
+* 1 year 2 quadrums idle
+* MultiAnalyzer and Refining to unlock
+* 200 Steel, 8 Component to build
+
+Uranium:
+* 4000W
+* 1 capacity
+* 10 days active
+* 2 years idle
+* MultiAnalyzer and ShipReactor to unlock
+* 250 Plasteel, 10 Component, 10 Uranium to build
 
 Feedback Welcome
 --------------------------------
-Let me know if there are bugs, balance issues, or features you'd like to see!
+Let us know if there are bugs, balance issues, or features you'd like to see!
 
 Change Log
---------------------------------
-2017/04/06, 1.0: Initial release
-
--------------------------------------------------------------------------------------------
-2017/04/07, 1.1: Balance tweaks
-* Wood backup generators now last ~1 season/load idle and ~1 day/load running
-* Chemfuel backup generators now last ~1 year/load idle and ~4 days/load running
-* Both generators now require MultiAnalyzer research instead of just Electricity
-* Chemfuel still requires Refining research
-
--------------------------------------------------------------------------------------------
 2017/04/08, 1.2.1: Behavior additions
 * Generators can now be minified, i.e. installed/uninstalled
 * Since they generate some amount of heat, the heater hinting shows when placing generators
@@ -47,15 +56,14 @@ Change Log
 2017/07/30, 1.3: Updated size/graphics and tuning
 * Thanks to Xsile for new graphics and adjustments!
 
-New stats:
-* Wood: 1200W; 75 capacity; 5 days active; 2 quadrums 7 days idle
-* Chemfuel: 2100W; 75 capacity; 7 1/2 days active; 1 year 2 quadrums idle
-* Uranium: 4000W; 1 capacity; 10 days active; 2 years idle
+-------------------------------------------------------------------------------------------
+2017/08/01, 1.3.1: Generators work without batteries!
+* Also, TL;DR documentation
 
 Roadmap
 --------------------------------
-* ~Balance tweaks~
-* ~Install/uninstall capability~
+* Animations!
+* Size and orientation changes, TBD
 * On/off thresholds configurability
 * Other options?
 
