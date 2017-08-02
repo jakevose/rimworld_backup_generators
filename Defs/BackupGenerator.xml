@@ -8,7 +8,7 @@
     <graphicData>
       <texPath>Things/Building/Power/BackupGeneratorWood</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,2)</drawSize>
+      <drawSize>(2,1)</drawSize>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -30,7 +30,7 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle.</description>
-    <size>(1,2)</size>
+    <size>(2,1)</size>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
