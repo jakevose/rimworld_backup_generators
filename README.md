@@ -48,9 +48,9 @@ Change Log
 * Thanks to Xsile for new graphics and adjustments!
 
 New stats:
-  Wood: 1200W; 75 capacity; 5 days active; 2 quadrums 7 days idle
-  Chemfuel: 2100W; 75 capacity; 7 1/2 days active; 1 year 2 quadrums idle
-  Uranium: 4000W; 1 capacity; 10 days active; 2 years idle
+* Wood: 1200W; 75 capacity; 5 days active; 2 quadrums 7 days idle
+* Chemfuel: 2100W; 75 capacity; 7 1/2 days active; 1 year 2 quadrums idle
+* Uranium: 4000W; 1 capacity; 10 days active; 2 years idle
 
 Roadmap
 --------------------------------
