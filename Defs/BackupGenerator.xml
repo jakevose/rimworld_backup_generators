@@ -158,6 +158,84 @@
     </researchPrerequisites>
   </ThingDef>
 
+  <ThingDef ParentName="BuildingBase">
+    <defName>MobileGeneratorChemfuel</defName>
+    <label>Mobile Generator (chemfuel)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/MobileGeneratorChemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>1</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A portable generator that burns chemfuel at a semi-effecient rate to power a small home or base.</description>
+    <size>(1,1)</size>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <costList>
+      <Steel>80</Steel>
+      <Component>4</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-900</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>0.8</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>8.0</fuelHighConsumptionRate>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.8</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <designationHotkey>Misc3</designationHotkey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Refining</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
    <ThingDef ParentName="BuildingBase">
     <defName>BackupGeneratorUranium</defName>
     <label>backup generator (uranium)</label>
@@ -165,7 +243,7 @@
     <graphicData>
       <texPath>Things/Building/Power/BackupGeneratorUranium</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -187,14 +265,15 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <description>Emergency power kicks in when battery reserves fall below a set minimum (currently: 200 Wd). Generator kicks off when reserves exceed a set maximum (1000 Wd). Consumes little fuel when idle.</description>
-    <size>(2,2)</size>
+    <size>(3,3)</size>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <costList>
-	    <Plasteel>250</Plasteel>
-      <Component>10</Component>
-      <Uranium>10</Uranium>
+		<Steel>150</Steel>
+		<Plasteel>250</Plasteel>
+		<Uranium>50</Uranium>
+		<Component>10</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
