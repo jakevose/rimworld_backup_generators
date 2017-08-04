@@ -312,7 +312,6 @@
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>MultiAnalyzer</li>
       <li>ShipReactor</li>
     </researchPrerequisites>
   </ThingDef>
@@ -393,7 +392,6 @@
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>MultiAnalyzer</li>
       <li>ShipReactor</li>
     </researchPrerequisites>
   </ThingDef>
