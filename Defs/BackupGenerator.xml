@@ -389,7 +389,7 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
