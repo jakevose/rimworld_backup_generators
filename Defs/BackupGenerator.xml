@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
-
+  <ThingDef Name="BuildingBaseME" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <statBases>
+      <SellPriceFactor>0.70</SellPriceFactor>
+    </statBases>
+  </ThingDef>
+  
   <ThingDef ParentName="BuildingBase">
     <defName>BackupGeneratorWood</defName>
     <label>Backup generator (wood)</label>
@@ -236,8 +250,86 @@
     </researchPrerequisites>
   </ThingDef>
   
-   <ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="BuildingBaseME">
     <defName>BackupGeneratorUranium</defName>
+    <label>Deprecated, will be removed in a future version!</label>
+    <thingClass>Building</thingClass>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <graphicData>
+      <texPath>Things/Building/Power/BackupGeneratorUranium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Destroy this building for a full refund!</description>
+    <size>(2,2)</size>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <!--<claimable>false</claimable>-->
+      <deconstructible>false</deconstructible>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-3000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>0.008</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>0.1</fuelHighConsumptionRate>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.008</fuelConsumptionRate>
+        <fuelCapacity>1.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(50,200,50,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <repairEffect>ConstructMetal</repairEffect>
+    <killedLeavings>
+		<Steel>150</Steel>
+		<Plasteel>250</Plasteel>
+		<Uranium>50</Uranium>
+		<Component>10</Component>
+    </killedLeavings>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+    </tradeTags>
+    <canOverlapZones>false</canOverlapZones>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>LargeBackupGeneratorUranium</defName>
     <label>Backup generator (uranium)</label>
     <thingClass>Building</thingClass>
     <graphicData>
