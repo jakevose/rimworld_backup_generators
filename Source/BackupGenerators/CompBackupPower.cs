@@ -22,7 +22,7 @@ namespace DLTD
 
 		protected CompBreakdownable breakdownableComp;
 
-		private bool recharging = false;
+		public bool recharging = false;
 
 		protected virtual float DesiredPowerOutput
 		{

@@ -234,7 +234,7 @@
       <li>Refining</li>
     </researchPrerequisites>
   </ThingDef>
-  
+
 <ThingDef ParentName="BuildingBase">
     <defName>BackupGeneratorUranium</defName>
     <label>Deprecated, will be removed in a future version!</label>
@@ -312,11 +312,11 @@
     </tradeTags>
     <canOverlapZones>false</canOverlapZones>
   </ThingDef>
-  
+
    <ThingDef ParentName="BuildingBase">
     <defName>LargeBackupGeneratorUranium</defName>
     <label>Backup generator (uranium)</label>
-    <thingClass>Building</thingClass>
+    <thingClass>DLTD.CompBackupUraniumAnimatedLarge</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/BackupGeneratorUranium</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -396,7 +396,7 @@
    <ThingDef ParentName="BuildingBase">
     <defName>MobileGeneratorUranium</defName>
     <label>Mobile generator (uranium)</label>
-    <thingClass>Building</thingClass>
+    <thingClass>DLTD.CompBackupUraniumAnimatedMobile</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/MobileGeneratorUranium</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -46,6 +46,7 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -57,10 +58,13 @@
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompBackupPower.cs" />
+    <Compile Include="CompBackupUraniumAnimatedLarge.cs" />
+    <Compile Include="CompBackupUraniumAnimatedMobile.cs" />
     <Compile Include="CompProperties_RefuelableDualConsumption.cs" />
     <Compile Include="CompRefuelableDualConsumption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
