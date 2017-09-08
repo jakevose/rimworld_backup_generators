@@ -105,21 +105,27 @@ namespace DLTD
         {
             get
             {
-                if (!powerComp.recharging)
-                    return base.Graphic;
-
-                if (graphic == null || graphic[0] == null)
+                try
                 {
-                    UpdateGraphics();
-                    // Graphic couldn't be loaded? (Happends after load for a while)
-                    if (graphic == null || graphic[0] == null)
+                    if (!powerComp.recharging)
                         return base.Graphic;
+
+                    if (graphic == null || graphic[0] == null)
+                    {
+                        UpdateGraphics();
+                        // Graphic couldn't be loaded? (Happends after load for a while)
+                        if (graphic == null || graphic[0] == null)
+                            return base.Graphic;
+                    }
+
+                    if (graphic[activeGraphicFrame] != null)
+                        return graphic[activeGraphicFrame];
+
+                    return base.Graphic;
                 }
-
-                if (graphic[activeGraphicFrame] != null)
-                    return graphic[activeGraphicFrame];
-
-                return base.Graphic;
+                catch {
+                    return base.Graphic;
+                }
             }
         }
     }
