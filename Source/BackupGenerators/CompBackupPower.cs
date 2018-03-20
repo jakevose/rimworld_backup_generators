@@ -42,12 +42,12 @@ namespace DLTD
                     // and batteries are connected
                     if (this.transNet.batteryComps.Count > 0)
                     {
-                        if (this.recharging && this.transNet.CurrentStoredEnergy() >= 1000)
+                        if (this.recharging && this.transNet.CurrentStoredEnergy() >= refuelableDualConsumptionComp.Props.highPowerTreshhold)
                         {
                             // turn back off when we fill one battery's worth of charge
                             this.recharging = false;
                         }
-                        else if (this.transNet.CurrentStoredEnergy() <= 200)
+                        else if (this.transNet.CurrentStoredEnergy() <= refuelableDualConsumptionComp.Props.lowPowerTreshhold)
                         {
                             // turn on when we drop below 200Wd stored
                             this.recharging = true;

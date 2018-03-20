@@ -47,6 +47,8 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>2.0</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>15.0</fuelHighConsumptionRate>
+		<lowPowerTreshhold>200</lowPowerTreshhold>
+		<highPowerTreshhold>1000</highPowerTreshhold>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>2.0</fuelConsumptionRate>
@@ -125,6 +127,8 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>0.8</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>10.0</fuelHighConsumptionRate>
+		<lowPowerTreshhold>200</lowPowerTreshhold>
+		<highPowerTreshhold>1000</highPowerTreshhold>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>0.8</fuelConsumptionRate>
@@ -204,6 +208,8 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>1.6</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>15.0</fuelHighConsumptionRate>
+		<lowPowerTreshhold>200</lowPowerTreshhold>
+		<highPowerTreshhold>1000</highPowerTreshhold>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1.6</fuelConsumptionRate>
@@ -274,6 +280,8 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>0.008</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>0.1</fuelHighConsumptionRate>
+		<lowPowerTreshhold>200</lowPowerTreshhold>
+		<highPowerTreshhold>1000</highPowerTreshhold>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>0.008</fuelConsumptionRate>
@@ -362,6 +370,8 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>0.008</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>0.1</fuelHighConsumptionRate>
+		<lowPowerTreshhold>200</lowPowerTreshhold>
+		<highPowerTreshhold>1000</highPowerTreshhold>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>0.008</fuelConsumptionRate>
@@ -442,6 +452,8 @@
       <li Class="DLTD.CompProperties_RefuelableDualConsumption">
         <fuelLowConsumptionRate>0.016</fuelLowConsumptionRate>
         <fuelHighConsumptionRate>0.2</fuelHighConsumptionRate>
+		<lowPowerTreshhold>200</lowPowerTreshhold>
+		<highPowerTreshhold>1000</highPowerTreshhold>
       </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>0.016</fuelConsumptionRate>

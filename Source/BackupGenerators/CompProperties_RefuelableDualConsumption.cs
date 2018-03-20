@@ -21,8 +21,10 @@ namespace DLTD
 	{
 		public float fuelHighConsumptionRate = 1f;
 		public float fuelLowConsumptionRate = 1f;
+        public float lowPowerTreshhold = 1f;
+        public float highPowerTreshhold = 1f;
 
-		public CompProperties_RefuelableDualConsumption()
+        public CompProperties_RefuelableDualConsumption()
 		{
 			this.compClass = typeof(CompRefuelableDualConsumption);
 		}
