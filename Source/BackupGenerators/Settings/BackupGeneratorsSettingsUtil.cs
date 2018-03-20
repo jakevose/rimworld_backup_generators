@@ -20,34 +20,22 @@ namespace BackupGenerators
 
         private static void CreateLowPowerMap()
         {
-            Log.Message("BackupGenerators: CreateLowPowerMap Start");
             if (LowPower == null)
             {
-                Log.Message("BackupGenerators: CreateLowPowerMap in if clause lowpower gleich null");
                 LowPower = new Dictionary<string, float>();
-                Log.Message("BackupGenerators: CreateLowPowerMap lowPower gesetzt");
                 BackupGeneratorsDefLow = new Dictionary<string, ThingDef>();
-                Log.Message("BackupGenerators: CreateLowPowerMap Backupgenerator def gesetzt");
                 foreach (ThingDef def in DefDatabase<ThingDef>.AllDefsListForReading)
                 {
-                    Log.Message("BackupGenerators: CreateLowPowerMap in foreach schleife");
-                    string test = "";
                     List<string> checkComps = new List<string>();
                     foreach (var x in def.comps)
                     {
                         checkComps.Add(x.ToString());
-                        test += x;
                     }
-                    Log.Message(test);
                     if (checkComps.Contains("DLTD.CompProperties_RefuelableDualConsumption"))
-                    {
-                        Log.Message("BackupGenerators: CreateLowPowerMap in if schleife defnamestartswith, defname = " + def.defName);
-                        
+                    {                        
                         DLTD.CompProperties_RefuelableDualConsumption lowPowerTresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
-                        Log.Message("BackupGenerators: CreateLowPowerMap lowpowertech gesetzt");
                         if (LowPower != null)
                         {
-                            //Log.Message("BackupGenerators: CreateLowPowerMap in if schleife lowpower ungleich null, defname = "+ def.defName + " lowerpowertresh = " + lowPowerTresh.lowPowerTreshhold);
                             LowPower.Add(def.defName, lowPowerTresh.lowPowerTreshhold);
                             BackupGeneratorsDefLow.Add(def.defName, def);
                         }
@@ -64,12 +52,10 @@ namespace BackupGenerators
                 BackupGeneratorsDefHigh = new Dictionary<string, ThingDef>();
                 foreach (ThingDef def in DefDatabase<ThingDef>.AllDefsListForReading)
                 {
-                    string test = "";
                     List<string> checkComps = new List<string>();
                     foreach (var x in def.comps)
                     {
                         checkComps.Add(x.ToString());
-                        test += x;
                     }
                     if (checkComps.Contains("DLTD.CompProperties_RefuelableDualConsumption"))
                     {
@@ -83,27 +69,6 @@ namespace BackupGenerators
                 }
             }
         }
-
-        //private static void CreateHighPowerMap()
-        //{
-        //    if (HighPower == null)
-        //    {
-        //        HighPower = new Dictionary<string, float>();
-        //        BackupGeneratorsDefHigh = new Dictionary<string, ThingDef>();
-        //        foreach (ThingDef def in DefDatabase<ThingDef>.AllDefsListForReading)
-        //        {
-        //            if (def.defName.StartsWith("BackupGenerator"))
-        //            {
-        //                DLTD.CompProperties_RefuelableDualConsumption highPowerTresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
-        //                if (HighPower != null)
-        //                {
-        //                    HighPower.Add(def.defName, highPowerTresh.highPowerTreshhold);
-        //                    BackupGeneratorsDefHigh.Add(def.defName, def);
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
 
         public static void ApplyFactor(float newValueLow, float newValueHigh)
         {
