@@ -1,4 +1,4 @@
-[A17] Backup Generators
+[B18] Backup Generators
 --------------------------------
 Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
@@ -60,11 +60,15 @@ Change Log
 2017/08/01, 1.3.1: Generators work without batteries!
 * Also, TL;DR documentation
 
+-------------------------------------------------------------------------------------------
+2018/03/20, 1.4: B18 Support and Settings
+* Adds support for B18
+* Low and High Power Treshholds can now be configured via ingame Mod Settings Menu
+
 Roadmap
 --------------------------------
 * Animations!
 * Size and orientation changes, TBD
-* On/off thresholds configurability
 * Other options?
 
 License

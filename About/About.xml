@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>[A17] Backup Generators</name>
+  <name>[A18] Backup Generators</name>
   <author>DamnationLtd</author>
   <url>https://github.com/jakevose/rimworld_backup_generators</url>
-  <targetVersion>0.17.0</targetVersion>
+  <targetVersion>0.18.0</targetVersion>
   <description>Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
 &lt;size=24&gt;Features&lt;/size&gt;
