@@ -25,7 +25,7 @@ namespace BackupGenerators
     {
         static void Postfix()
         {
-            BackupGeneratorsSettingsUtil.ApplyFactor(Settings.LowPowerTresh.AsFloat, Settings.HighPowerTresh.AsFloat);
+            BackupGeneratorsSettingsUtil.ApplyFactor(Settings.LowPowerThresh.AsFloat, Settings.HighPowerThresh.AsFloat);
         }
     }
 
@@ -34,7 +34,7 @@ namespace BackupGenerators
     {
         static void Postfix()
         {
-            BackupGeneratorsSettingsUtil.ApplyFactor(Settings.LowPowerTresh.AsFloat, Settings.HighPowerTresh.AsFloat);
+            BackupGeneratorsSettingsUtil.ApplyFactor(Settings.LowPowerThresh.AsFloat, Settings.HighPowerThresh.AsFloat);
         }
     }
 }

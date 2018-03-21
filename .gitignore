@@ -5,5 +5,7 @@ Assemblies/Assembly-CSharp-firstpass.dll
 Assemblies/UnityEngine.dll
 Assemblies/NAudio.dll
 Assemblies/Assembly-CSharp.dll
+Assemblies/TextMeshPro-1.0.55.56.0b11.dll
+Assemblies/UnityEngine.UI.dll
 Source/.vs
 Source/BackupGenerators/obj/

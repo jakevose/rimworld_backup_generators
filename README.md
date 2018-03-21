@@ -8,6 +8,7 @@ Features
 --------------------------------
 * Generators start producing power when connected reserves are critically low (&lt;= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
 * Brand new art! Uranium version! Thanks, Xsile!
+* Configurable low and high reserve values in mod settings. Thanks, Herbiems89!
 
 Specifics
 --------------------------------
@@ -63,7 +64,11 @@ Change Log
 -------------------------------------------------------------------------------------------
 2018/03/20, 1.4: B18 Support and Settings
 * Adds support for B18
-* Low and High Power Treshholds can now be configured via ingame Mod Settings Menu
+* Low and High Power Thresholds can now be configured via ingame Mod Settings Menu
+
+-------------------------------------------------------------------------------------------
+2018/03/21, 1.4.0: B18 support, HugsLib added for configurable settings
+* Special thanks to Herbiems89 for these updates!
 
 Roadmap
 --------------------------------

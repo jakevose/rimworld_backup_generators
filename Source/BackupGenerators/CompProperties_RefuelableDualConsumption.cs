@@ -3,7 +3,7 @@
  * User: DamnationLtd
  * Date: 4/4/2017
  * Time: 9:10 PM
- * 
+ *
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using RimWorld;
@@ -21,8 +21,8 @@ namespace DLTD
 	{
 		public float fuelHighConsumptionRate = 1f;
 		public float fuelLowConsumptionRate = 1f;
-        public float lowPowerTreshhold = 1f;
-        public float highPowerTreshhold = 1f;
+        public float lowPowerThreshold = 200f;
+        public float highPowerThreshold = 1000f;
 
         public CompProperties_RefuelableDualConsumption()
 		{

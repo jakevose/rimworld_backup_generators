@@ -32,11 +32,11 @@ namespace BackupGenerators
                         checkComps.Add(x.ToString());
                     }
                     if (checkComps.Contains("DLTD.CompProperties_RefuelableDualConsumption"))
-                    {                        
-                        DLTD.CompProperties_RefuelableDualConsumption lowPowerTresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
+                    {
+                        DLTD.CompProperties_RefuelableDualConsumption lowPowerThresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
                         if (LowPower != null)
                         {
-                            LowPower.Add(def.defName, lowPowerTresh.lowPowerTreshhold);
+                            LowPower.Add(def.defName, lowPowerThresh.lowPowerThreshold);
                             BackupGeneratorsDefLow.Add(def.defName, def);
                         }
                     }
@@ -59,10 +59,10 @@ namespace BackupGenerators
                     }
                     if (checkComps.Contains("DLTD.CompProperties_RefuelableDualConsumption"))
                     {
-                        DLTD.CompProperties_RefuelableDualConsumption highPowerTresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
+                        DLTD.CompProperties_RefuelableDualConsumption highPowerThresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
                         if (HighPower != null)
                         {
-                            HighPower.Add(def.defName, highPowerTresh.highPowerTreshhold);
+                            HighPower.Add(def.defName, highPowerThresh.highPowerThreshold);
                             BackupGeneratorsDefHigh.Add(def.defName, def);
                         }
                     }
@@ -78,15 +78,15 @@ namespace BackupGenerators
             foreach (KeyValuePair<string, float> low in LowPower)
             {
                 ThingDef def = BackupGeneratorsDefLow[low.Key];
-                DLTD.CompProperties_RefuelableDualConsumption lowTresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
-                lowTresh.lowPowerTreshhold = newValueLow;
+                DLTD.CompProperties_RefuelableDualConsumption lowThresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
+                lowThresh.lowPowerThreshold = newValueLow;
             }
 
             foreach (KeyValuePair<string, float> high in HighPower)
             {
                 ThingDef def = BackupGeneratorsDefHigh[high.Key];
-                DLTD.CompProperties_RefuelableDualConsumption highTresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
-                highTresh.highPowerTreshhold = newValueHigh;
+                DLTD.CompProperties_RefuelableDualConsumption highThresh = def.GetCompProperties<DLTD.CompProperties_RefuelableDualConsumption>();
+                highThresh.highPowerThreshold = newValueHigh;
             }
         }
     }
