@@ -1,0 +1,4 @@
+C:\Users\Markus\Desktop\rimworld_backup_generators-master\Assemblies\BackupGenerators.dll
+C:\Users\Markus\Desktop\rimworld_backup_generators-master\Source\BackupGenerators\obj\Debug\BackupGenerators.csprojResolveAssemblyReference.cache
+C:\Users\Markus\Desktop\rimworld_backup_generators-master\Source\BackupGenerators\obj\Debug\BackupGenerators.csproj.CoreCompileInputs.cache
+C:\Users\Markus\Desktop\rimworld_backup_generators-master\Source\BackupGenerators\obj\Debug\BackupGenerators.dll

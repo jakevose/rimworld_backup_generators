@@ -32,7 +32,7 @@ namespace BackupGenerators
                     Messages.Message("New Threshold applied", MessageTypeDefOf.PositiveEvent);
                 }
             }
-            Widgets.Label(new Rect(20, 100, 400, 30), "Wd Value at which generators will turn on");
+            Widgets.Label(new Rect(20, 100, 400, 30), "Wd Value at which generators will turn on and off");
             if (Current.Game != null)
             {
                 BackupGeneratorsSettingsUtil.ApplyFactor(Settings.LowPowerThresh.AsFloat, Settings.HighPowerThresh.AsFloat);
