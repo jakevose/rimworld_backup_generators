@@ -5,8 +5,7 @@ Assemblies/Assembly-CSharp-firstpass.dll
 Assemblies/UnityEngine.dll
 Assemblies/NAudio.dll
 Assemblies/Assembly-CSharp.dll
-Source/.vs/BackupGenerators/v15/.suo
-Source/BackupGenerators/obj/Debug/CoreCompileInputs.cache
-Source/BackupGenerators/obj/Debug/BackupGenerators.dll
-Source/BackupGenerators/obj/Debug/BackupGenerators.csprojResolveAssemblyReference.cache
-Source/BackupGenerators/obj/Debug/BackupGenerators.csproj.FileListAbsolute.txt
+Assemblies/TextMeshPro-1.0.55.56.0b11.dll
+Assemblies/UnityEngine.UI.dll
+Source/.vs
+Source/BackupGenerators/obj/
