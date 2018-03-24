@@ -43,8 +43,8 @@ namespace BackupGenerators
 
     class Settings : ModSettings
     {
-        public static readonly FloatInput LowPowerThresh = new FloatInput("Low Power Threshold");
-        public static readonly FloatInput HighPowerThresh = new FloatInput("High Power Threshold");
+        public static readonly FloatInput LowPowerThresh = new FloatInput("Low Power Threshold", 200f);
+        public static readonly FloatInput HighPowerThresh = new FloatInput("High Power Threshold", 1000f);
 
         public override void ExposeData()
         {
