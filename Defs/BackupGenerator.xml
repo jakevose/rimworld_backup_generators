@@ -72,7 +72,8 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>MultiAnalyzer</li>
+      <li>Electricity</li>
+      <li>Batteries</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -148,7 +149,7 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>MultiAnalyzer</li>
+      <li>MicroelectronicsBasics</li>
       <li>Refining</li>
     </researchPrerequisites>
   </ThingDef>
@@ -225,6 +226,7 @@
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
       <li>Refining</li>
     </researchPrerequisites>
   </ThingDef>
@@ -262,7 +264,7 @@
     <costList>
 		<Steel>150</Steel>
 		<Plasteel>250</Plasteel>
-		<Uranium>50</Uranium>
+		<Uranium>10</Uranium>
 		<Component>10</Component>
     </costList>
     <comps>
@@ -303,7 +305,8 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>ShipReactor</li>
+      <li>MultiAnalyzer</li>
+      <li>ComponentAssembly</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -340,7 +343,7 @@
     <costList>
 		<Steel>60</Steel>
 		<Plasteel>80</Plasteel>
-		<Uranium>10</Uranium>
+		<Uranium>5</Uranium>
 		<Component>6</Component>
     </costList>
     <comps>
@@ -381,7 +384,8 @@
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>ShipReactor</li>
+      <li>MultiAnalyzer</li>
+      <li>ComponentAssembly</li>
     </researchPrerequisites>
   </ThingDef>
 
