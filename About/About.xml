@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>[B18] Backup Generators</name>
+  <name>[B19] Backup Generators</name>
   <author>DamnationLtd</author>
   <url>https://github.com/jakevose/rimworld_backup_generators</url>
-  <targetVersion>0.18.0</targetVersion>
+  <targetVersion>0.19.0</targetVersion>
   <description>Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
 REQUIREMENT: HugsLib
@@ -46,7 +46,7 @@ Uranium:
 * 1 capacity
 * 10 days active
 * 2 years idle
-* MultiAnalyzer and Component Assembly to unlock
+* MultiAnalyzer and Fabrication to unlock
 * 250 Plasteel, 150 Steel, 10 Component, 10 Uranium to build
 
 Mobile Uranium:
@@ -54,7 +54,7 @@ Mobile Uranium:
 * 1 capacity
 * 5 days active
 * 1 year idle
-* MultiAnalyzer and Component Assembly to unlock
+* MultiAnalyzer and Fabrication to unlock
 * 80 Plasteel, 60 Steel, 6 Component, 5 Uranium to build
 
 &lt;size=24&gt;Feedback Welcome&lt;/size&gt;
@@ -62,6 +62,10 @@ Let us know if there are bugs, balance issues, or features you'd like to see!
 
 &lt;size=24&gt;Change Log&lt;/size&gt;
 
+2018/09/07, 1.5.0: B19 support!
+* So many broken defs! Thanks for your support and patience!
+
+-------------------------------------------------------------------------------------------
 2018/03/21, 1.4.1: Mod showcase video link, tuning
 * Thanks to Fistandantillus7 for the research balancing!
 * Lowered uranium build costs

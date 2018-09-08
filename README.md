@@ -1,10 +1,10 @@
-[B18] Backup Generators
+[B19] Backup Generators
 --------------------------------
 Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
 REQUIREMENT: HugsLib
 
-Get them on the [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=899559174).
+Get them on the [Steam Workshop](https://steamcommunity.com/id/damnationltd/myworkshopfiles/?appid=294100).
 
 New! Check out [BaRKy's awesome mod showcase video](https://www.youtube.com/watch?v=vohhQ4PEtLA)!
 
@@ -48,7 +48,7 @@ Uranium:
 * 1 capacity
 * 10 days active
 * 2 years idle
-* MultiAnalyzer and Component Assembly to unlock
+* MultiAnalyzer and Fabrication to unlock
 * 250 Plasteel, 150 Steel, 10 Component, 10 Uranium to build
 
 Mobile Uranium:
@@ -56,7 +56,7 @@ Mobile Uranium:
 * 1 capacity
 * 5 days active
 * 1 year idle
-* MultiAnalyzer and Component Assembly to unlock
+* MultiAnalyzer and Fabrication to unlock
 * 80 Plasteel, 60 Steel, 6 Component, 5 Uranium to build
 
 
@@ -67,6 +67,10 @@ Let us know if there are bugs, balance issues, or features you'd like to see!
 Change Log
 -------------------------------------------------------------------------------------------
 
+2018/09/07, 1.5.0: B19 support!
+* So many broken defs! Thanks for your support and patience!
+
+-------------------------------------------------------------------------------------------
 2018/03/21, 1.4.1: Mod showcase video link, tuning
 * Thanks to Fistandantillus7 for the research balancing!
 * Lowered uranium build costs

@@ -21,18 +21,19 @@
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
       <Flammability>1.0</Flammability>
+      <Mass>40</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
     <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
     <size>(1,2)</size>
     <costList>
       <Steel>150</Steel>
-      <Component>6</Component>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -75,7 +76,10 @@
       <li>Electricity</li>
       <li>Batteries</li>
     </researchPrerequisites>
-  </ThingDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>BackupGeneratorChemfuel</defName>
@@ -98,18 +102,19 @@
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
       <Flammability>1.0</Flammability>
+      <Mass>40</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
     <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
     <size>(1,2)</size>
     <costList>
       <Steel>200</Steel>
-      <Component>8</Component>
+      <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -150,9 +155,12 @@
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>MicroelectronicsBasics</li>
-      <li>Refining</li>
+      <li>BiofuelRefining</li>
     </researchPrerequisites>
-  </ThingDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>MobileGeneratorChemfuel</defName>
@@ -175,18 +183,19 @@
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
       <Flammability>1.0</Flammability>
+      <Mass>15</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
     <description>A portable generator that burns chemfuel at a semi-effecient rate to power a small home or base.</description>
     <size>(1,1)</size>
     <costList>
       <Steel>80</Steel>
-      <Component>4</Component>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -227,9 +236,12 @@
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>MicroelectronicsBasics</li>
-      <li>Refining</li>
+      <li>BiofuelRefining</li>
     </researchPrerequisites>
-  </ThingDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>LargeBackupGeneratorUranium</defName>
@@ -252,11 +264,12 @@
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
       <Flammability>1.0</Flammability>
+      <Mass>75</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
     <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
@@ -265,7 +278,7 @@
 		<Steel>150</Steel>
 		<Plasteel>250</Plasteel>
 		<Uranium>10</Uranium>
-		<Component>10</Component>
+		<ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -306,9 +319,12 @@
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>MultiAnalyzer</li>
-      <li>ComponentAssembly</li>
+      <li>Fabrication</li>
     </researchPrerequisites>
-  </ThingDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
 
    <ThingDef ParentName="BuildingBase">
     <defName>MobileGeneratorUranium</defName>
@@ -331,11 +347,12 @@
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <WorkToBuild>1</WorkToBuild>
       <Flammability>1.0</Flammability>
+      <Mass>15</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
     <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
@@ -344,7 +361,7 @@
 		<Steel>60</Steel>
 		<Plasteel>80</Plasteel>
 		<Uranium>5</Uranium>
-		<Component>6</Component>
+		<ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -385,8 +402,11 @@
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>MultiAnalyzer</li>
-      <li>ComponentAssembly</li>
+      <li>Fabrication</li>
     </researchPrerequisites>
-  </ThingDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
 
 </Defs>
