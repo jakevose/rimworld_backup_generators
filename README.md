@@ -67,6 +67,9 @@ Let us know if there are bugs, balance issues, or features you'd like to see!
 Change Log
 -------------------------------------------------------------------------------------------
 
+2018/10/19, 1.6.0: Release 1.0 support!
+
+-------------------------------------------------------------------------------------------
 2018/10/19, 1.5.1: Requires work to build!
 * Final planned B19 release; sets reasonable work requirements for all generator types (see above!)
 
