@@ -23,7 +23,7 @@ Wood:
 * 5 days active
 * 2 quadrums 7 days idle
 * Electricity, Batteries to unlock
-* 150 Steel, 6 Component to build
+* 150 Steel, 6 Component, 2500 work to build
 
 Chemfuel:
 * 2100W
@@ -31,7 +31,7 @@ Chemfuel:
 * 7 1/2 days active
 * 1 year 2 quadrums idle
 * Refining, Microelectronics Basics to unlock
-* 200 Steel, 8 Component to build
+* 200 Steel, 8 Component, 2500 work to build
 
 Mobile Chemfuel:
 * 900W
@@ -39,7 +39,7 @@ Mobile Chemfuel:
 * 1 1/3 days active
 * 12 1/2 days idle
 * Refining, Microelectronics Basics to unlock
-* 80 Steel, 4 Component to build
+* 80 Steel, 4 Component, 1000 work to build
 
 Uranium:
 * 4000W
@@ -47,7 +47,7 @@ Uranium:
 * 10 days active
 * 2 years idle
 * MultiAnalyzer and Fabrication to unlock
-* 250 Plasteel, 150 Steel, 10 Component, 10 Uranium to build
+* 250 Plasteel, 150 Steel, 10 Component, 10 Uranium, 12000 work to build
 
 Mobile Uranium:
 * 1800W
@@ -55,13 +55,17 @@ Mobile Uranium:
 * 5 days active
 * 1 year idle
 * MultiAnalyzer and Fabrication to unlock
-* 80 Plasteel, 60 Steel, 6 Component, 5 Uranium to build
+* 80 Plasteel, 60 Steel, 6 Component, 5 Uranium, 7500 work to build
 
 &lt;size=24&gt;Feedback Welcome&lt;/size&gt;
 Let us know if there are bugs, balance issues, or features you'd like to see!
 
 &lt;size=24&gt;Change Log&lt;/size&gt;
 
+2018/10/19, 1.5.1: Requires work to build!
+* Final planned B19 release; sets reasonable work requirements for all generator types (see above!)
+
+-------------------------------------------------------------------------------------------
 2018/09/07, 1.5.0: B19 support!
 * So many broken defs! Thanks for your support and patience!
 

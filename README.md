@@ -67,6 +67,10 @@ Let us know if there are bugs, balance issues, or features you'd like to see!
 Change Log
 -------------------------------------------------------------------------------------------
 
+2018/10/19, 1.5.1: Requires work to build!
+* Final planned B19 release; sets reasonable work requirements for all generator types (see above!)
+
+-------------------------------------------------------------------------------------------
 2018/09/07, 1.5.0: B19 support!
 * So many broken defs! Thanks for your support and patience!
 
