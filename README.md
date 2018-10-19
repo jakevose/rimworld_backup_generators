@@ -1,4 +1,4 @@
-[B19] Backup Generators
+Backup Generators (1.0+)
 --------------------------------
 Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
