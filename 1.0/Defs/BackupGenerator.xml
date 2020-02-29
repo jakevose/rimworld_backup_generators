@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>BackupGeneratorWood</defName>
+    <label>Backup generator (wood)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/BackupGeneratorWood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>40</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
+    <size>(1,2)</size>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-1200</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>2.0</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>15.0</fuelHighConsumptionRate>
+		<lowPowerThreshold>200</lowPowerThreshold>
+		<highPowerThreshold>1000</highPowerThreshold>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.0</fuelConsumptionRate>
+        <fuelCapacity>75.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,42,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>4</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>Batteries</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>BackupGeneratorChemfuel</defName>
+    <label>Backup generator (chemfuel)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/BackupGeneratorChemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>40</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
+    <size>(1,2)</size>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-2100</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>0.8</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>10.0</fuelHighConsumptionRate>
+		<lowPowerThreshold>200</lowPowerThreshold>
+		<highPowerThreshold>1000</highPowerThreshold>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.8</fuelConsumptionRate>
+        <fuelCapacity>75.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(217,42,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+      <li>BiofuelRefining</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MobileGeneratorChemfuel</defName>
+    <label>Mobile generator (chemfuel)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/MobileGeneratorChemfuel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A portable generator that burns chemfuel at a semi-effecient rate to power a small home or base.</description>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-900</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>1.6</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>15.0</fuelHighConsumptionRate>
+		<lowPowerThreshold>200</lowPowerThreshold>
+		<highPowerThreshold>1000</highPowerThreshold>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>1.6</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+      <li>BiofuelRefining</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>LargeBackupGeneratorUranium</defName>
+    <label>Backup generator (uranium)</label>
+    <thingClass>DLTD.CompBackupUraniumAnimatedLarge</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/BackupGeneratorUranium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>75</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
+    <size>(3,3)</size>
+    <costList>
+		<Steel>150</Steel>
+		<Plasteel>250</Plasteel>
+		<Uranium>10</Uranium>
+		<ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-4000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>0.008</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>0.1</fuelHighConsumptionRate>
+		<lowPowerThreshold>200</lowPowerThreshold>
+		<highPowerThreshold>1000</highPowerThreshold>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.008</fuelConsumptionRate>
+        <fuelCapacity>1.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(50,200,50,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>MultiAnalyzer</li>
+      <li>Fabrication</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
+
+   <ThingDef ParentName="BuildingBase">
+    <defName>MobileGeneratorUranium</defName>
+    <label>Mobile generator (uranium)</label>
+    <thingClass>DLTD.CompBackupUraniumAnimatedMobile</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/MobileGeneratorUranium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>7500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Emergency power kicks in when battery reserves fall below a set minimum (default: 200 Wd). Generator kicks off when reserves exceed a set maximum (default: 1000 Wd). Consumes little fuel when idle.</description>
+    <size>(1,1)</size>
+    <costList>
+		<Steel>60</Steel>
+		<Plasteel>80</Plasteel>
+		<Uranium>5</Uranium>
+		<ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>DLTD.CompBackupPower</compClass>
+        <basePowerConsumption>-1800</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="DLTD.CompProperties_RefuelableDualConsumption">
+        <fuelLowConsumptionRate>0.016</fuelLowConsumptionRate>
+        <fuelHighConsumptionRate>0.2</fuelHighConsumptionRate>
+		<lowPowerThreshold>200</lowPowerThreshold>
+		<highPowerThreshold>1000</highPowerThreshold>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.016</fuelConsumptionRate>
+        <fuelCapacity>1.0</fuelCapacity>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(50,200,50,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>MultiAnalyzer</li>
+      <li>Fabrication</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+</ThingDef>
+
+</Defs>
