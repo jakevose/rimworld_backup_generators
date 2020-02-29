@@ -9,18 +9,26 @@
   </supportedVersions>
   <modDependencies>
     <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
       <packageId>UnlimitedHugs.HugsLib</packageId>
       <displayName>HugsLib</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
     </li>
   </modDependencies>
   <loadAfter>
+    <li>brrainz.harmony</li>
     <li>UnlimitedHugs.HugsLib</li>
   </loadAfter>
   <packageId>damnationltd.backupgenerators</packageId>
   <description>Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
-REQUIREMENT: HugsLib
+REQUIREMENT (1.0): HugsLib
+REQUIREMENT (1.1): Harmony 2, HugsLib
 
 &lt;size=24&gt;Features&lt;/size&gt;
 * Generators start producing power when connected reserves are critically low (&lt;= 200 Wd) and stop when reserves exceed 1000 Wd or their power is flicked off/on
