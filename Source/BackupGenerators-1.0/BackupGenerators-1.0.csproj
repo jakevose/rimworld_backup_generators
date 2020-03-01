@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{172513AE-4F66-4222-BE8E-42F930F733B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>BackupGenerators</RootNamespace>
+    <AssemblyName>BackupGenerators</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\BackupGenerators\CompBackupPower.cs">
+      <Link>CompBackupPower.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\CompBackupUraniumAnimatedLarge.cs">
+      <Link>CompBackupUraniumAnimatedLarge.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\CompBackupUraniumAnimatedMobile.cs">
+      <Link>CompBackupUraniumAnimatedMobile.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\CompProperties_RefuelableDualConsumption.cs">
+      <Link>CompProperties_RefuelableDualConsumption.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\CompRefuelableDualConsumption.cs">
+      <Link>CompRefuelableDualConsumption.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\Settings\BackupGeneratorsSettingsUtil.cs">
+      <Link>Settings\BackupGeneratorsSettingsUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\Settings\Input.cs">
+      <Link>Settings\Input.cs</Link>
+    </Compile>
+    <Compile Include="..\BackupGenerators\Settings\Settings.cs">
+      <Link>Settings\Settings.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\Library\Application Support\Steam\steamapps\common\RimWorld\RimWorldMac.app\Contents\Resources\Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\Library\Application Support\Steam\steamapps\common\RimWorld\RimWorldMac.app\Contents\Resources\Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\packages\Lib.Harmony.1.2.0.1\lib\net35\0Harmony.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

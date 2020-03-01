@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupGenerators", "BackupGenerators\BackupGenerators.csproj", "{AB0FCA9F-E8F3-4706-B1D4-4E531086F286}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupGenerators-1.1", "BackupGenerators\BackupGenerators-1.1.csproj", "{AB0FCA9F-E8F3-4706-B1D4-4E531086F286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupGenerators-1.0", "BackupGenerators-1.0\BackupGenerators-1.0.csproj", "{172513AE-4F66-4222-BE8E-42F930F733B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{AB0FCA9F-E8F3-4706-B1D4-4E531086F286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB0FCA9F-E8F3-4706-B1D4-4E531086F286}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AB0FCA9F-E8F3-4706-B1D4-4E531086F286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172513AE-4F66-4222-BE8E-42F930F733B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172513AE-4F66-4222-BE8E-42F930F733B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172513AE-4F66-4222-BE8E-42F930F733B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172513AE-4F66-4222-BE8E-42F930F733B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

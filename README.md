@@ -2,8 +2,7 @@ Backup Generators (1.0+)
 --------------------------------
 Backup generators provide a stopgap to prevent black/brownouts when battery reserves are depleted.
 
-REQUIREMENT (1.0): HugsLib
-REQUIREMENT (1.1): Harmony 2, HugsLib
+NB: 1.0 version bundles Harmony 1.2; 1.1 version bundles Harmony 2
 
 Get them on the [Steam Workshop](https://steamcommunity.com/id/damnationltd/myworkshopfiles/?appid=294100).
 
