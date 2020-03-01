@@ -1,0 +1,3 @@
+/Users/jvose/gits/rimworld_backup_generators/Assemblies/BackupGenerators.dll
+/Users/jvose/gits/rimworld_backup_generators/Source/BackupGenerators-1.0/obj/Release/BackupGenerators-1.0.csproj.CopyComplete
+/Users/jvose/gits/rimworld_backup_generators/Source/BackupGenerators-1.0/obj/Release/BackupGenerators.dll
