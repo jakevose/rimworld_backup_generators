@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+﻿using Harmony;
 using RimWorld;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace BackupGenerators
     {
         static Main()
         {
-            var harmony = new Harmony("com.backupgenerators.rimworld.mod");
+            var harmony = HarmonyInstance.Create("com.backupgenerators.rimworld.mod");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             Log.Message("BackupGenerators: Adding Harmony Postfix to GameComponentUtility.StartedNewGame");
